@@ -1,3 +1,5 @@
+import pandas as pd
+
 def renameColumns(students: pd.DataFrame) -> pd.DataFrame:
     students.rename(columns={"id": "student_id"}, inplace=True)
     students.rename(columns={"first": "first_name"}, inplace=True)
